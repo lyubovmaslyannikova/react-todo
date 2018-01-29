@@ -6,7 +6,7 @@ class TodoList extends Component {
 		const { todos, toggleTodo } = this.props;
 
 		return (
-			<List relaxed>
+			<List>
 				{todos && todos.map(todo => (
 					<List.Item key={todo.id}>
 						<List.Content>
@@ -15,7 +15,7 @@ class TodoList extends Component {
 								size='mini'
 								floated='left'
 								icon={todo.isCompleted ? 'checkmark' : 'remove'}
-								color={todo.isCompleted ? 'green' : 'grey' }
+								color={todo.isCompleted ? 'teal' : 'grey' }
 								onClick={() => toggleTodo(todo.id)}
 							/>
 							{todo.text}

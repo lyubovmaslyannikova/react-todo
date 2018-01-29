@@ -15,7 +15,7 @@ export function toggleTodo(id) {
 		payload: {
 			id
 		}
-	}
+	};
 }
 
 export function setFilter(filter) {

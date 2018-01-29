@@ -7,12 +7,12 @@ class Filters extends Component {
 		const { filter, setFilter } = this.props;
 
 		return (
-			<Button.Group>
+			<Button.Group basic fluid color='orange'>
 				{filters && filters.map((text, index) => (
 					<Button
 						key={index}
 						content={text}
-						active={filter === text ? true : false}
+						active={filter === text}
 						onClick={() => setFilter(text)}
 					/>
 				))}
