@@ -3,11 +3,11 @@ import { Button } from 'semantic-ui-react';
 
 class Filters extends Component {
 	render() {
-		const filters = ['All', 'Completed', 'Uncompleted'];
+		const filters = ['All', 'Completed', 'Active'];
 		const { filter, setFilter } = this.props;
 
 		return (
-			<Button.Group basic fluid color='orange'>
+			<Button.Group fluid>
 				{filters && filters.map((text, index) => (
 					<Button
 						key={index}

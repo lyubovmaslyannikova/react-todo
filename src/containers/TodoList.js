@@ -9,7 +9,7 @@ const filterTodos = (filter, todos) => {
 				return todo.isCompleted;
 			});
 
-		case 'Uncompleted':
+		case 'Active':
 			return todos.filter(todo => {
 				return !todo.isCompleted;
 			});

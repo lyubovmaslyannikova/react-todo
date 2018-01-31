@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Form, Input } from 'semantic-ui-react';
+import { Form } from 'semantic-ui-react';
 
 class AddTodo extends Component {
 	handleSubmit = e => {
@@ -18,7 +18,7 @@ class AddTodo extends Component {
 
 		return (
 			<Form onSubmit={this.handleSubmit}>
-				<Input
+				<Form.Input
 					value={inputValue}
 					action={{ color: 'teal', icon: 'plus', content: 'Add' }}
 					onChange={e => handleInput(e.target.value)}
